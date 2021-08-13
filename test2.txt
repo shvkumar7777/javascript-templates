@@ -1,0 +1,17 @@
+var removeDuplicates = function(nums) {
+  let len = nums.length ;//length of the input array
+    
+  let unique=[];//an empty array to store the unique values
+  let _temp ;
+  if (len >=0 && len <= Math.pow(10,4)){
+  for(let i=0;i<len;i++){
+      if(nums[i] !== _temp){
+          unique.push(nums[i])
+          _temp = nums[i];
+      }
+    }
+  }
+  return unique;
+};
+
+console.log(removeDuplicates([1,1,2]));
